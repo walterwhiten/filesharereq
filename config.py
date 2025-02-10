@@ -36,7 +36,7 @@ HELP_TXT = "<b>ʜᴇʟʟᴏ!\nᴛʜɪs ɪs ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇ sʜᴀ�
 ABOUT_TXT = "<b>┏• Creator : <a href='tg://settings'>Yours Truly</a>\n┣• Channel : <a href='https://t.me/AnimeXWrld'>Anime Wrld</a>\n┗• Support Group : <a href='https://t.me/AnimeXWrld_Chat'>Anime Wrld Chat</a></b>"
 
 #PICS
-START_PIC = os.environ.get("START_PIC", "https://graph.org/file/08895d73dd09fc6510f20-51c4e383dcc5071def.jpg")
+START_PIC = os.environ.get("START_PIC", "https://graph.org/file/d5452c5ce032492c9dc3a-b2e8bbbf0674a13a28.jpg")
 FORCE_PIC = os.environ.get("FORCE_PIC", "https://graph.org/file/3a2e44390819d680d6595-c9724fe3faeb286c0f.jpg")
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
