@@ -17,41 +17,41 @@ API_HASH = os.environ.get("API_HASH", "6f87b351ddf6c8c56999f8ba5b19cc7c")
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001927336862"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "1853178421"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "5071463525"))
 
 #Port
 PORT = os.environ.get("PORT", "7020")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://alphonsemetaln:RfEJA4rlD4MdfJaU@cluster0.6evqe.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URI = os.environ.get("DATABASE_URL", "")
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 # Put 0 on on that which you don't want to enable
-FORCE_CHANNEL = int(os.environ.get("FORCE_CHANNEL", "-1001580437794"))
-FORCE_CHANNEL2 = int(os.environ.get("FORCE_CHANNEL2", "-1002411875389"))
-REQUEST_CHANNEL = int(os.environ.get("REQUEST_CHANNEL", "-1002422054930"))
+FORCE_CHANNEL = int(os.environ.get("FORCE_CHANNEL", "0"))
+FORCE_CHANNEL2 = int(os.environ.get("FORCE_CHANNEL2", "0"))
+REQUEST_CHANNEL = int(os.environ.get("REQUEST_CHANNEL", "0"))
 
 #TXT
-HELP_TXT = "<b>ʜᴇʟʟᴏ!\nᴛʜɪs ɪs ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇ sʜᴀʀᴇ ʙᴏᴛ ᴏғ @Anime_Sensei_Network\n\n• ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅs\n├/start : sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ</b>"
-ABOUT_TXT = "<b><i>About Us..\n\n‣ ᴍᴀᴅᴇ ғᴏʀ : @Anime_Sensei_Network\n‣ ᴏᴡɴᴇʀ : @Sensei_Rimuru !</i></b>"
+HELP_TXT = "<b>ʜᴇʟʟᴏ!\nᴛʜɪs ɪs ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇ sʜᴀʀᴇ ʙᴏᴛ</b>"
+ABOUT_TXT = "<b>┏• Creator : <a href='tg://settings'>Yours Truly</a>\n┣• Channel : <a href='https://t.me/AnimeXWrld'>Anime Wrld</a>\n┗• Support Group : <a href='https://t.me/AnimeXWrld_Chat'>Anime Wrld Chat</a></b>"
 
 #PICS
-START_PIC = os.environ.get("START_PIC", "https://graph.org/file/cf462f10a7da1037af6d8.jpg")
-FORCE_PIC = os.environ.get("FORCE_PIC", "https://graph.org/file/cf462f10a7da1037af6d8.jpg")
+START_PIC = os.environ.get("START_PIC", "https://graph.org/file/08895d73dd09fc6510f20-51c4e383dcc5071def.jpg")
+FORCE_PIC = os.environ.get("FORCE_PIC", "https://graph.org/file/3a2e44390819d680d6595-c9724fe3faeb286c0f.jpg")
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>ʜᴇʟʟᴏ !! {first}\n\n ᴜsᴇ ᴍᴇ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ғɪʟᴇs⚡️.</b>")
+START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI am a file store bot")
 try:
-    ADMINS=[7179837246]
-    for x in (os.environ.get("ADMINS", "6030197186").split()):
+    ADMINS=[5071463525]
+    for x in (os.environ.get("ADMINS", "5071463525").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "😐sᴏʀʀʏ ! ʏᴏᴜ ʜᴀᴠᴇɴ'ᴛ ᴊᴏɪɴᴇᴅ ᴄʜᴀɴɴᴇʟ ᴘʟᴇᴀsᴇ😋 ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛʜᴇɴ ᴛʀʏ ᴀɢᴀɪɴ. Note : ᴍᴜsᴛ ᴊᴏɪɴ <b>https://t.me/+Rh_eKVXt0tJkOWY1</b> ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ғɪʟᴇs")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "<b>Hello {first}\n\nTo get the files you need to join in my backup channels and then click the try again button</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
@@ -66,15 +66,15 @@ else:
     DISABLE_CHANNEL_BUTTON = False
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "🚫Pʟᴇᴀꜱᴇ ᴅᴏɴ'ᴛ ᴍᴇꜱꜱᴀɢᴇ ᴍᴇ ᴅɪʀᴇᴄᴛʟʏ ɪ ᴀᴍ ᴏɴʟʏ ᴡᴏʀᴋ ꜰᴏʀ - @Anime_X_Hunters"
+USER_REPLY_TEXT = "stop it, get some help"
 
 # Auto-delete configuration
 AUTO_DEL = os.environ.get("AUTO_DEL", "True")
 DEL_TIMER = int(os.environ.get("DEL_TIMER", "600"))
-DEL_MSG = "<b>This message will be deleted automatically in {time}. Forward it to your saved messages..!</b>"
+DEL_MSG = "<b><b>❗Note</b>\n<b>• Save these files to the your saved messages or to any other private chat, Files in this chat will be automatically deleted after {time}</b>"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(2036803347)
+ADMINS.append(5071463525)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
