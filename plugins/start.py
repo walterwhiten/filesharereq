@@ -47,7 +47,8 @@ async def auto_del_notification(client, msg, delay_time):
 async def delete_message(msg, delay_time):
     if AUTO_DEL.lower() == "true":
         await asyncio.sleep(delay_time)
-        await msg.delete()
+        command_part = k.command[1] if k.command and len(k.command) > 1 else None
+        await k.edit_text("<b>The files have been deleted successfully</b>\n<b>If you still haven't forwarded the files to your Saved Messages then try again with the link you used before</b>", reply_markup=keyboard)
 
 @Bot.on_message(filters.command('start') & filters.private & subscribed)
 async def start_command(client: Client, message: Message):
