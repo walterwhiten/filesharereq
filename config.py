@@ -8,28 +8,28 @@ from logging.handlers import RotatingFileHandler
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6501228626:AAEac_b2Z3S_UQknAz9KcLBftPjhB5K4k_0")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "26376042"))
+APP_ID = int(os.environ.get("APP_ID", "7713526"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "1f5343b0646645ca1eaf7c4759fc248f")
+API_HASH = os.environ.get("API_HASH", "6f87b351ddf6c8c56999f8ba5b19cc7c")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002097979375"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001927336862"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "2036803347"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "1853178421"))
 
 #Port
 PORT = os.environ.get("PORT", "7020")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://animesensei:animesensei11@animesensei.o6zhyp8.mongodb.net/?retryWrites=true&w=majority")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://alphonsemetaln:RfEJA4rlD4MdfJaU@cluster0.6evqe.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 # Put 0 on on that which you don't want to enable
-FORCE_CHANNEL = int(os.environ.get("FORCE_CHANNEL", "-1002491040507"))
-FORCE_CHANNEL2 = int(os.environ.get("FORCE_CHANNEL2", "-1002211677343"))
-REQUEST_CHANNEL = int(os.environ.get("REQUEST_CHANNEL", "-1002358818038"))
+FORCE_CHANNEL = int(os.environ.get("FORCE_CHANNEL", "-1001580437794"))
+FORCE_CHANNEL2 = int(os.environ.get("FORCE_CHANNEL2", "-1002411875389"))
+REQUEST_CHANNEL = int(os.environ.get("REQUEST_CHANNEL", "-1002422054930"))
 
 #TXT
 HELP_TXT = "<b>ʜᴇʟʟᴏ!\nᴛʜɪs ɪs ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇ sʜᴀʀᴇ ʙᴏᴛ ᴏғ @Anime_Sensei_Network\n\n• ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅs\n├/start : sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ</b>"
